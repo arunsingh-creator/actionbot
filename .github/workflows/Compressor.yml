@@ -31,7 +31,7 @@ jobs:
          run: |
            git clone -b main https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/Dark-Senpai/encoder.git
        - name: Running PrivateEncoderV2.0 Bot 
-         timeout-minutes: 600
+         timeout-minutes: 360
          continue-on-error: true
          run: |
            cd encoder 
