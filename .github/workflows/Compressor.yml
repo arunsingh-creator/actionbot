@@ -29,12 +29,12 @@ jobs:
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone -b main https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/Dark-Senpai/encoder.git
+           git clone -b main https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/Dark-Senpai/encoderV2.git
        - name: Running PrivateEncoderV2.0 Bot 
-         timeout-minutes: 340
+         timeout-minutes: 300
          continue-on-error: true
          run: |
-           cd encoder 
+           cd encoderV2
            docker build -t compressor . && docker run compressor
            
        - name: Loop workflow
