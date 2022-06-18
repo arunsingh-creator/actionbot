@@ -1,4 +1,4 @@
-name: PrivateEncoderV2.0 Workflows 
+name: Deploy On Action
 
 on:
     push:
